@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table{
+            width: 200px;
+            height: 200px;
+            border-collapse: collapse;
+        }
+        tr{
+            border: 1px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            background-color: wheat;
+            text-decoration: aqua;
+            color: rgb(158, 67, 243);
+        }
+        ul{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo principal</h1>
+    <h2>Titulo segundario</h2>
+    <div>
+        Esse Texto se encontra dentro de uma div
+    </div>
+    <article>
+        <section>
+            Esse texto esta dentro de uma section 
+        </section>
+    </article>
+    <p>Lorem ipsum dolor, sit amet conspectetur adipisicing elit. Expedita quis, dolorum quibusdam corrupti ad molestiae voluptas est fuga deleniti quidem explicabo doloremque ratione architecto tenetur nulla, dolor maiores, necessitatibus qui!
+
+    </p>
+    <!-- table>tr*4>td*2-->
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+<ul>
+    <li>Dua Lipa</li>
+    <li>Anitta</li>
+    <li>Weekend</li>
+    <li>Bruno Marns</li>
+    <li>Ludmilla</li>
+    <li>Ariana Grande</li>
+</ul>
+<p>
+    Primeira linha <br/>
+    Segunda linha <br/>
+    Terceira linha depois da gr<hr/>
+</p>
+<!--Vamos construir um formulario sem ultilizar os atributos id e name, para simplificar-->
+<form method="post" action="pagdestino.html">
+    Digite seu nome<input type="text" size="90" required>
+    Digite seu e-mail<input id="idemail" type="email"> <br>
+    Selecione seu estado civil<br>
+    <input type="radio" name="estcivil" id="idsolteiro" value="solteiro" checked>Solteiro <br>
+    <input type="radio" name="estcivil" id="idcasado" value="casado">Casado <br>
+    <input type="radio" name="estcivil" id="idviuvo" value="viuvo">Viuvo <br>
+        <input type="submit" value="Eviar">
+        Selecone sua lingugagem de programaçao preferida <br>
+        <section id="idlinguagem" name="linguagem">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="Cs">C#</option>
+            <option value="VB">Visual Basic</option>
+        </section>
+        <br>
+        <textarea rows="6" cols="30" id="observacoes" name="observacoes">
+            <br>
+            <input type="submit" value="Enviar">            
+        </textarea>
+</form>
+</body>
+</html>
